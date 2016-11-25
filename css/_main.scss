@@ -1,0 +1,41 @@
+.site-main {
+
+}
+
+.post-list {
+	display: block;
+	width: 96%;
+	max-width: 35em;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.post-list_item {
+	display: block;
+	padding: 1em 0;
+
+	&:hover {
+		background-color: lighten($grey, 60%);
+		text-decoration: none;
+
+		h1, em {
+			text-decoration: underline;
+		}
+	}
+
+	h1 {
+		margin: 0 0 0.25em;
+		// font-size: 1.875em;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+article {
+	width: 94%;
+	max-width: 34em;
+	margin: 0 auto;
+}

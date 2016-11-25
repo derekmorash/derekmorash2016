@@ -1,0 +1,12 @@
+// colours
+$darkgrey: 		#404146;
+$grey: 			#54546c;
+$purple: 		#56445D;
+$green: 		darken(#a5d296, 25%);
+
+$text: $grey;
+$headertext: saturate($purple, 10%);
+
+// font stacks
+$fontheader: Ubuntu, "Arial Black", Gadget, sans-serif;
+$mono: "Lucida Console", Monaco, monospace;
