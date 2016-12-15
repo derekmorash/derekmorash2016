@@ -1,11 +1,16 @@
 // colours
+$blue:			#548687;
+$seagreen:		#8FBC94;
+$lightgreen:	#C5E99B;
+
 $darkgrey: 		#404146;
 $grey: 			#54546c;
 $purple: 		#56445D;
-$green: 		darken(#a5d296, 25%);
+$green: 		$seagreen;//darken(#a5d296, 25%);
 
 $text: $grey;
-$headertext: saturate($purple, 10%);
+$headertext: $blue;//saturate($purple, 10%);
+$brightpurple: saturate($purple, 40%);
 
 // font stacks
 $fontheader: Ubuntu, "Arial Black", Gadget, sans-serif;

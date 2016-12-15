@@ -1,16 +1,17 @@
 /*!
 Theme Name: derekmorash
-Theme URI: derekmorash.com
-Description: Theme for my blog
-Version: 1.0
+Theme URI: http://derekmorash.com/
 Author: Derek Morash
-Author URI: derekmorash.com
+Author URI: http://derekmorash.com/
+Description: http://derekmorash.com/
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: derekmorash
 */
 
 // base
+@import "mixins";
 @import "normalize";
 @import "variables";
 @import "base";
@@ -19,3 +20,6 @@ Text Domain: derekmorash
 // layouts
 @import "header";
 @import "main";
+@import "footer";
+
+@import "syntax";

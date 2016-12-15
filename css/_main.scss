@@ -1,41 +1,82 @@
-.site-main {
-
-}
-
 .post-list {
 	display: block;
-	width: 96%;
-	max-width: 35em;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 .post-list_item {
 	display: block;
-	padding: 1em 0;
+	padding: 2em 0;
+	border-bottom: solid 1px lighten($grey, 55%);
 
 	&:hover {
-		background-color: lighten($grey, 60%);
-		text-decoration: none;
+		background: transparent;
 
-		h1, em {
+		> h1, > em {
 			text-decoration: underline;
+		}
+		> p {
+			color: $text;
 		}
 	}
 
-	h1 {
-		margin: 0 0 0.25em;
-		// font-size: 1.875em;
+	> h1 {
+		font-size: 1.25em;
 	}
 
-	p {
+	> p {
 		margin: 0;
+		color: $text;
+		line-height: 1.5;
 	}
 }
 
-article {
-	width: 94%;
-	max-width: 34em;
-	margin: 0 auto;
+.postmetadata {
+	color: $green;
+	font-style: italic;
+}
+
+.blog-post_header {
+	margin: 2em 0;
+
+	> h1 {
+		margin: 0;
+		// color: $purple;
+	}
+}
+
+.blog-post {
+	// margin-top: 2em;
+	// padding: 0 0 1em;
+
+	&:after {
+		content: '\0002E';
+		display: block;
+		color: $text;
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 1;
+	}
+}
+
+.pagination {
+	@include clearfix();
+	padding: 3em 0 0.5em;
+
+	a {
+		float: left;
+
+		&:last-of-type {
+			float: right;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.post-list_item {
+		h1 {
+			font-size: 1.5em;
+		}
+	}
 }

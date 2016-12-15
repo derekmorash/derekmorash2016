@@ -11,12 +11,9 @@
 
 get_header();
 ?>
-<p>
-	index.php
-</p>
 <main class="site-main">
+
 	<?php if (have_posts()) : ?>
-	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
 	<ul class="post-list">
 		<?php while (have_posts()) : the_post(); ?>
@@ -34,8 +31,8 @@ get_header();
 
 		<?php
 		// pagination(); ?>
-	<nav style="text-align:center;">
-		<?php posts_nav_link( ' &#183; ', 'Previous Page', 'Next Page' ); ?>
+	<nav class="pagination">
+		<?php posts_nav_link( ' ', 'Previous Page', 'Next Page' ); ?>
 	</nav>
 	<?php else :
 

@@ -13,7 +13,7 @@
 
 <footer role="contentinfo" class="site-footer">
 	<small>
-		Copyright &copy; Derek Morash - <?php echo date('Y') ?>
+		Copyright &copy; <a href="https://twitter.com/derek_morash">Derek Morash</a> - <?php echo date('Y') ?>
 	</small>
 </footer>
 

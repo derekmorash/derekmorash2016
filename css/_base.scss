@@ -1,22 +1,36 @@
-html {
-	position: relative;
-	min-height: 100%;
+*, *:before, *:after {
+	box-sizing: border-box;
 }
-
-body {
-	margin: 0 0 3em; /* bottom = footer height */
+::selection {
+	color: #fff;
+	background: $blue;
 }
 
 img {
 	display: block;
 	max-width: 100%;
 	height: auto;
+	border-style: none;
 }
 
-.site-footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 3em;
-	width: 100%;
+.site-header, .site-main {
+	width: 92%;
+	max-width: 36em;
+	margin: 0 auto;
+}
+
+.video-wrapper {
+	position: relative;
+	margin: 0 0 1em;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	object, embed, iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
