@@ -65,21 +65,6 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 /**
-* Register Menus
-*/
-// if ( function_exists('register_nav_menus') ) {
-// 	add_action( 'init', 'register_theme_menus' );
-// 	function register_theme_menus() {
-// 		register_nav_menus(
-// 			array(
-// 				'main_menu' => __( 'Main Menu' )
-// 			)
-// 		);
-// 	}
-// }
-
-
-/**
 * Utility Functions For Development and Debugging
 */
 function show($obj, $die=FALSE) {
@@ -106,8 +91,6 @@ function my_excerpt_length($length) {
 */
 add_filter('excerpt_more', 'new_excerpt_more');
 function new_excerpt_more($more) {
-    global $post;
-	// return ' <a class="readmore" href="'. get_permalink($post->ID) . '">continue reading</a>';
 	return '...';
 }
 

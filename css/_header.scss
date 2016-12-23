@@ -1,18 +1,17 @@
 .site-header {
-	// outline: solid 1px red;
-	margin: 1.25em auto;
+	margin: 1em auto;
 	padding: 0 1em;
 	border-left: solid 0.25em $blue;
 
 	> p {
 		margin: 0;
-		line-height: 1.25;
+		// color: darken($text, 20%);
 	}
 }
 
 .logo {
 	margin: 0 0 0.25em;
-	font-size: 1.75em;
+	font-size: 1.5em;
 	font-family: $fontheader;
 	line-height: 1;
 

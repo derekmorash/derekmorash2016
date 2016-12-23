@@ -103,12 +103,6 @@ blockquote, .highlight {
 	.nf, .l, .ld, .m, .mf, .mh, .mo, .li, .s, .sb, .sc, .sb, .sd, .se, .sh, .si, .sx, .sr, .s1, .ss  {
 		color: $green;
 	}
-
-	.c1 {
-		background-color: $seagreen;
-		color: #fff;
-		font-style: italic;
-	}
 }
 
 pre, code {
@@ -125,7 +119,7 @@ pre, code {
 	color: $green;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
 	html {
 		font-size: 20px;
 	}
@@ -151,10 +145,4 @@ pre, code {
 			font-size: 0.75em;
 		}
 	}
-}
-
-@media screen and (min-width: 900px) {
-	// html {
-	// 	font-size: 22px;
-	// }
 }
